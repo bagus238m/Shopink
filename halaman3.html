@@ -6,7 +6,14 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   </head>
-  <style></style>
+  <style>
+    .lo {
+      background-color: blueviolet;
+    }
+    .lo:hover {
+      background-color: aqua;
+    }
+  </style>
   <body>
     <nav class="navbar navbar-dark" style="background-color: #b8c4b8">
       <div class="container">
@@ -18,7 +25,7 @@
     </nav>
     <div class="container mt-4">
       <div class="row g-3">
-        <div class="col-12 col-lg-8 col-sm-8 col-md-8">
+        <div class="col-12 col-lg-8 col-sm-12 col-md-12">
           <div class="">
             <div class="card mb-3" style="max-width: 1000px">
               <div class="row">
@@ -60,37 +67,24 @@
             </div>
           </div>
         </div>
-          <div class="col-12 col-lg-4 col-md-4 col-sm-4">
-            <div class="card" style="max-width: 500px;">
+          <div class="col-lg-4 col-12">
+            <div class="card w-100">
               <div class="card-body">
-                <p><strong>Ringkasan Belanja</strong></p>
-                <hr>
-                  <div class="row justify-content-between">
-                    <div class="col-8">
-                      Total Harga Barang
-                    </div>
-                    <div class="col">
-                     Rp. 5.500.000
-                    </div>
-                  </div>
-                  <div class="row justify-content-between">
-                    <div class="col-8">
-                      Total Ongkir
-                    </div>
-                    <div class="col">
-                     Rp. 0
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row justify-content-between">
-                    <div class="col-8">
-                      Total Harga
-                    </div>
-                    <div class="col">
-                     Rp. Unlimited
-                    </div>
-                  </div>
-                <a href="#" class="btn btn-success mt-3" style="width: 100%">Checkout</a>
+               <p><b>Ringkasan Belanja</b></p>
+               <div class="d-flex justify-content-between">
+                <p>Total Harga Barang</p>
+                <p>Rp. 5.500.000</p>
+               </div>
+               <div class="d-flex justify-content-between">
+                <p>Total Ongkir</p>
+                <p>Rp. 0</p>
+               </div>
+               <hr>
+               <div class="d-flex justify-content-between">
+                <p>Total Harga</p>
+                <p>Rp. 5.500.000</p>
+               </div>
+                <a href="#" class="btn lo mt-3" style="width: 100%">Checkout</a>
               </div>
             </div>
           </div>
